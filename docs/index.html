@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="https://clojurescript.org/images/cljs-logo-icon-32.png">
+  </head>
+  <body>
+    <div class="container">
+    <p>This code is stored under resources/index.html file</p>
+    <div id="app"> 
+    </div> <!-- end of app div -->
+
+    
+    <canvas id="drawing1">
+      Display a graph of max and min
+    </canvas>
+    
+    
+    <!--
+    see this
+    https://curiousprogrammer.net/posts/2022-03-08-figwheel-main-transition
+    
+    changed project.clj to generate advanced build once min directory
+    "fig:min"   ["run" "-m" "figwheel.main" "-O" "advanced" "-bo" "min"]
+    so development and build are not confused
+    croaked ...
+    
+      -->
+
+    <script src="cljs-out/dev-main.js" type="text/javascript"></script>
+    </div>
+  </body>
+</html>
+
+
